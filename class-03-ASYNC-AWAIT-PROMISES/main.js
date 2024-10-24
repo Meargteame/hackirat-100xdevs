@@ -49,7 +49,7 @@ function kiratsReadFile(ondone){
 function onDone(data){
     console.log(data);
 }
-kiratsReadFile(onDone);
+// kiratsReadFile(onDone);
 
 
 // AYNCHRONUS WITH PROMISES - USING PROMISES - WITHOUT USING CALLBACKS EXLUSIVELY
@@ -63,5 +63,13 @@ function kiratsReadFile2(){
 }
 
 
-kiratsReadFile2().then(onDone);
+// kiratsReadFile2().then(onDone);
 
+
+async function main(){
+    let res = await kiratsReadFile2();
+    
+    onDone(res);
+}
+
+main();
