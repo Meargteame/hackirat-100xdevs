@@ -1,0 +1,6 @@
+#  JAVASCRIPT FOUNDATIONS  TO AFVANCED WEEK 01 
+    -  all about javascript 
+    => JAVASCRIPT FOUNDATIONS
+    => BASICS JS APIS
+    => AYSNC AWAIT PROMISES
+    
