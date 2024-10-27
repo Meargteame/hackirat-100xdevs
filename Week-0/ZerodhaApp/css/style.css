@@ -1,0 +1,15 @@
+
+body{
+    background-color: rgba(234, 1, 1, 0.897);
+    color: white;
+}
+
+/* navbar styles */
+
+.navbar{
+    display: flex;
+}
+
+.nav{
+    display: flex;
+}

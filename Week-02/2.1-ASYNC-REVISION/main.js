@@ -1,32 +1,80 @@
-const fs = require("fs")
+// const fs = require(
+//     "fs"
+// )
+
+// function onDone(err,data){
+//     console.log(data);
+// }
+
+// function readFile1(){
+//     fs.readFile("a.txt","utf-8",onDone);
+
+// }
+// readFile1()
+// console.log("hi there 2")
 
 
 
-// ASYNC => using call back function 
-function readFile1(){
-    fs.readFile("a.txt","utf-8",function(err,data){
-        console.log(data);
-    })
-    
-}
 
-// readFile1();
-// console.log("Hi there from main");
+// // function readFile2(){
+// //     fs.readFile()
+// // }
 
 
-// ASYNC => using Promises 
 
 
-async function readFile2(){
-    let p = new Promise(function(resolve){
-        fs.readFile("a.txt","utf-8",function(err,data){
-            resolve(data);
-            console.log(data);
-        })
+// => Promisfy callback functon 
+
+
+// function mySetTimeOut(fn,duration){
+//     setTimeout(fn,duration);
+// }
+
+
+// function PromisfiedMySetTimeOut(duration){
+//     let p = new Promise(function(resolve,reject){
+//         resolve();
+//     });
+
+
+//     return p;
+// }
+
+
+// PromisfiedMySetTimeOut.then(mySetTimeOut);
+// mySetTimeOut( ()=>{
+//     console.log("After Set Time Out ");
+// },2000);
+
+
+
+
+
+
+// creating and calling a promisified function
+
+
+function promisifiedMySetTimeOut(duration){
+     
+    let p = new Promise( function(resolve){
+        setTimeout(() => {
+            resolve();
+        },duration);
+        
     })
     return p;
 }
 
 
-readFile2();
-console.log("Hi there from main");
+// calling or using the promis
+
+
+let ans = promisifiedMySetTimeOut(1000);
+ans.then(() => { 
+    console.log("Time Out is Done ");
+});
+
+
+console.log("It is Done");
+
+
