@@ -1,0 +1,15 @@
+{
+  "name": "2.2-express-node-js",
+  "version": "1.0.0",
+  "description": "* ECMASCRIPT\r  * JAVASCRIPT\r  * NODE JS \r  * BUN JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3"
+  }
+}
